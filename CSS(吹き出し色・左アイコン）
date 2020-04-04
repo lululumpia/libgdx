@@ -1,0 +1,17 @@
+.sb-id-30 .speech-balloon {
+  background-color: #fdeff5; /* 吹き出しメイン部分の背景色 */
+  border: 2px solid #f4b3c2; /* 吹き出しメイン部分のボーダー */
+  color: #333; /* セリフの文字色 */
+}
+.sb-id-30 .speech-balloon::before {
+  border-right: 12px solid #f4b3c2; /* 三角部分の外側（ボーダー）の太さ・形状・色 */
+}
+.sb-id-30 .speech-balloon::after {
+  border-right: 12px solid #fdeff5; /* 三角部分の内側（背景）の色 */
+}
+@media screen and (max-width: 480px){
+  .sb-id-30 .speech-balloon::before { border-right: 7px solid #f4b3c2; /* スマホでの三角部分の外側 */
+  }
+  .sb-id-30 .speech-balloon::after { border-right: 7px solid #fdeff5; /* スマホでの三角部分の内側 */
+  }
+}
